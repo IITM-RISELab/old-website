@@ -27,3 +27,8 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.card {
+  margin: 20px;
+  width: 700px;
+}
