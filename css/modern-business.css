@@ -49,6 +49,9 @@ body {
   font-size: 25px;
 }
 
+.project-body > h2 {
+  font-size: 22px;
+}
 
 @media only screen and (max-width: 768px) {
   #project-container {
@@ -56,5 +59,9 @@ body {
   }
   .project-body > h1 {
     font-size: 22px;
+  }
+
+  .project-body > h2 {
+    font-size: 20px;
   }
 }
