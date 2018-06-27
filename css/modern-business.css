@@ -35,7 +35,7 @@ body {
 
 #project-container {
   width: 80%;
-  padding: 30px;
+  padding: 40px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -43,4 +43,18 @@ body {
   display: block;
   margin: 30px auto;
   width: fit-content;
+}
+
+.project-body > h1 {
+  font-size: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #project-container {
+    width: 100%;
+  }
+  .project-body > h1 {
+    font-size: 22px;
+  }
 }
