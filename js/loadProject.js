@@ -27,5 +27,6 @@ databaseRef.child(id).once('value').then(function(snapshot){
             '</div>',
         '</div>'
     ].join("\n"))
-    $("#body-container").html(html)
+    $('#loader-container').fadeOut().remove()
+    $("#body-container").html(html).fadeIn();
 })
