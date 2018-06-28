@@ -12,16 +12,20 @@ var database = firebase.database()
 var databaseRef = database.ref('/projects')
 
 // Database Listener
-databaseRef.on("child_added", function(snapshot) {
-    var newProject = snapshot.val();
-    console.log('child added : ' + newProject)
-    addProjectToHTML(newProject,snapshot.key)
+databaseRef.once("value", function(snapshot) {
+    var projectList = snapshot.val();
+    console.log(projectList)
+    var keys = Object.keys(projectList)
+    for(var i=0;i<keys.length;i++){
+        console.log(keys[i])
+        var key = keys[i]
+        addProjectToHTML(projectList[key],key)
+    }
+    $('#loader-container').fadeOut().remove()
+    $("#projects-container").fadeIn();
 });
 
-// Click Listener
-
 function addProjectToHTML(project,id){
-    // console.log(project)
     var html = $([
         '<div class="card mx-auto">',
             '<div class="card-body">',
@@ -31,5 +35,5 @@ function addProjectToHTML(project,id){
             '</div>',
         '</div>',
     ].join("\n"))
-    $("#projects-container").hide().prepend(html).fadeIn()
+    $("#projects-container").prepend(html)
 }
