@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Lato');
+
+canvas#intro-canvas {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    position: fixed;
+    z-index: -1;
+}
+
+#intro-container{
+   height: 100vh;
+   width: 100%;
+   padding-top: 30vh;
+}
+
+#welcome-container{
+    margin: 0px auto;
+}
+
+#welcome-container > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+
+#btn-know-more {
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0,0.0);
+    border: 2px solid rgb(66, 192, 66);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#btn-know-more:hover {
+    background-color: rgb(66, 192, 66);
+    color: #FFF;
+    transition: 0.1s ease-in;
+}
+
+#btn-know-more:focus {
+    outline: none;
+}
