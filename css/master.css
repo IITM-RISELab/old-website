@@ -4,15 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Karla|Montserrat|Archivo');
+
 body {
   background-color: #FDFEFE;
-}
-
-@media (min-width: 992px) {
-  body {
-    /* padding-top: 100px; */
-  }
+  font-family: 'Archivo', sans-serif;
+  font-size: 22px;
 }
 
 .carousel-item {
@@ -35,6 +32,7 @@ body {
 }
 
 #navigation-bar {
+  padding: 0px;
   background-color: #FDFEFE;
   -webkit-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
   -moz-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
@@ -55,8 +53,9 @@ body {
 }
 
 #navigation-bar a {
+  padding: 15px 10px;
   font-family: 'Karla', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: #000;
 }
 
@@ -74,10 +73,11 @@ body {
 
 #navigation-bar .active>a {
   pointer-events: none;
+  color: #2ECC71;
   cursor: default;
   text-decoration: none;
-  font-weight: 500;
-  color: #28B463 !important;
+  font-weight: 550;
+  /* color: #28B463 !important; */
 }
 
 #projects-container {
@@ -98,6 +98,7 @@ body {
   display: block;
   margin: 30px auto;
   width: fit-content;
+  text-align: center;
 }
 
 .project-body>h1 {
@@ -106,6 +107,11 @@ body {
 
 .project-body>h2 {
   font-size: 22px;
+}
+
+.txt-title {
+  font-size: 44px;
+  font-family: 'Lato', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
