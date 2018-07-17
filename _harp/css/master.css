@@ -115,6 +115,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
   #project-container {
     width: 100%;
   }
@@ -127,6 +130,9 @@ body {
   .card {
     margin: 20px;
     width: 90%;
+  }
+  .txt-title {
+    font-size: 32px;
   }
 }
 

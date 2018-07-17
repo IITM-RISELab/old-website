@@ -1,5 +1,6 @@
 canvas#intro-canvas {
     left: 0px;
+    width: 150%;
     height: 100%;
     background: #eaedf0;
     position: fixed;
@@ -7,7 +8,6 @@ canvas#intro-canvas {
 }
 
 #intro-container{
-   height: 100vh;
    width: 100%;
 }
 
@@ -63,8 +63,11 @@ canvas#intro-canvas {
     #welcome-container > h1 {
         font-size: 46px;
     }
-
     .btn-intro {
         font-size: 16px;
     }
+    #about-container{
+        width: 80%;
+    }
+
   }
