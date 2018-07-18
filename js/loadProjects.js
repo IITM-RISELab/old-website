@@ -29,11 +29,15 @@ function addProjectToHTML(project,id){
     var html = $([
         '<div class="card mx-auto">',
             '<div class="card-body">',
-                '<h4 class="card-title">'+ project.title +'</h4>',
-                '<p class="card-text">' + project.description + '</p>',
-                '<a href="project.html?id=' + id + '" class="btn btn-primary">Learn More</a>',
+                '<h2 class="heading2 center">'+ project.title +'</h2>',
+                '<p class="card-text center">' + project.info + '</p>',
+                '<a href="project.html?id=' + id + '" class="button-link center">',
+                    '<button class="button center">',
+                        'Learn more',
+                    '</button>',
+                '</a>',
             '</div>',
         '</div>',
     ].join("\n"))
-    $("#projects-container").prepend(html)
+    $("#projects-list").prepend(html)
 }

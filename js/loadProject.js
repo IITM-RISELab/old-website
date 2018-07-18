@@ -17,10 +17,10 @@ var databaseRef = database.ref('/projects')
 
 databaseRef.child(id).once('value').then(function(snapshot){
     var project = snapshot.val()
-    var mdToHtml = converter.makeHtml(project.text)
+    var mdToHtml = converter.makeHtml(project.content)
     var html = $([
-        '<div id="project-container" class="center">',
-            '<h1 class="project-title center">' + project.title + '</h1>',
+        '<div id="project-container" class="center card">',
+            '<h2 class="heading2 center">' + project.title + '</h2>',
                 '<div class="project-body">',
                 mdToHtml,
                 '</div>',

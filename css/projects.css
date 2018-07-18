@@ -1,0 +1,13 @@
+#projects-container {
+    display: none;
+}
+
+#projects-list > div {
+    width: 65%;
+}
+
+@media only screen and (max-width: 768px) {
+    #projects-list > div {
+        width: 85%;
+    }
+  }
