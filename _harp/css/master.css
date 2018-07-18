@@ -7,36 +7,38 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Karla|Montserrat|Archivo');
 
 body {
-  background-color: #eaedf0;
+  background-color: #f8f9fa;
   font-family: 'Archivo', sans-serif;
   font-size: 22px;
+  padding-top: 8vh;
 }
 
-.carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+a {
+  color: #000;
 }
 
-.portfolio-item {
-  margin-bottom: 30px;
+a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
-.card {
-  margin: 20px;
-  width: 70%;
+a:visited {
+  color: #000;
 }
+
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Navigation bar styles */
 
 #navigation-bar {
   padding: 0px;
   background-color: #FDFEFE;
   -webkit-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
   -moz-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
-  box-shadow: 0px 4px 8px -1px rgba(135, 128, 135, 0.4)
+  box-shadow: 0px 4px 8px -1px rgba(135, 128, 135, 0.2)
 }
 
 #navigation-bar>.navbar-brand {
@@ -56,83 +58,88 @@ body {
   padding: 15px 10px;
   font-family: 'Karla', sans-serif;
   font-size: 22px;
-  color: #000;
-}
-
-#navigation-bar a:hover {
-  color: #000;
-}
-
-#navigation-bar a:visited {
-  color: #000;
-}
-
-#navigation-bar a:active {
-  color: #000;
 }
 
 #navigation-bar .active>a {
   pointer-events: none;
   color: #2ECC71;
-  cursor: default;
-  text-decoration: none;
   font-weight: 550;
-  /* color: #28B463 !important; */
 }
 
-#projects-container {
-  display: none;
+/* Utility classes */
+
+.card {
+  padding: 10px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #FDFEFE;
+  transition: 0.2s all ease-in-out;
 }
 
-#project-container {
-  width: 80%;
-  padding: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#body-container {
-  display: none;
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s all ease-in-out;
 }
 
 .center {
   display: block;
-  margin: 30px auto;
+  margin: 0px auto;
   width: fit-content;
   text-align: center;
 }
 
-.project-body>h1 {
-  font-size: 25px;
+.hidden {
+  display: none !important;
+  transition: 1s all ease-in-out;
 }
 
-.project-body>h2 {
-  font-size: 22px;
+.shown {
+  display: block !important;
+  transition: 1s all ease-in-out;
 }
 
-.txt-title {
+.heading1 {
   font-size: 44px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-family: 'Lato', sans-serif;
+}
+
+.heading2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.button {
+  background-color: #2ECC71;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: none;
+  color: darkslategray;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0px;
 }
 
 @media only screen and (max-width: 768px) {
   body {
     font-size: 18px;
   }
-  #project-container {
-    width: 100%;
-  }
-  .project-body>h1 {
-    font-size: 22px;
-  }
-  .project-body>h2 {
-    font-size: 20px;
-  }
   .card {
+    padding: 5px;
     margin: 20px;
-    width: 90%;
   }
-  .txt-title {
+  .heading1 {
     font-size: 32px;
+  }
+  .heading2 {
+    font-size: 24px;
   }
 }
 
