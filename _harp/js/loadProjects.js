@@ -31,11 +31,7 @@ function addProjectToHTML(project,id){
             '<div class="card-body">',
                 '<h2 class="heading2 center">'+ project.title +'</h2>',
                 '<p class="card-text center">' + project.info + '</p>',
-                '<a href="project.html?id=' + id + '" class="button-link center">',
-                    '<button class="button center">',
-                        'Learn more',
-                    '</button>',
-                '</a>',
+                '<a class="btn btn-primary center" href="project.html?id=' + id + '" role="button">Learn more</a>',
             '</div>',
         '</div>',
     ].join("\n"))

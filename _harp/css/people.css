@@ -1,0 +1,12 @@
+.card.bio-card {
+    padding: 20px 5px;
+    min-width: 300px;
+    height: 80%;
+}
+
+.img-container-round {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+}
