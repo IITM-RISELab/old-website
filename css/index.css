@@ -8,11 +8,6 @@ canvas#intro-canvas {
     transition: 0.3s all ease-in;
 }
 
-.faded {
-    opacity: 0.3;
-    transition: 0.3s all ease-in;
-}
-
 #intro-container{
    width: 100%;
 }

@@ -128,14 +128,9 @@ h5 {
   text-align: center;
 }
 
-.hidden {
-  display: none !important;
-  transition: 1s all ease-in-out;
-}
-
-.shown {
-  display: block !important;
-  transition: 1s all ease-in-out;
+.faded {
+  opacity: 0.3;
+  transition: 0.3s all ease-in;
 }
 
 .btn.btn-primary {

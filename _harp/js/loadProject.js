@@ -1,5 +1,6 @@
 var urlParams = new URLSearchParams(window.location.search)
 var converter = new showdown.Converter()
+converter.setFlavor('vanilla');
 var id = urlParams.get('id')
 
 // Initialize Firebase
@@ -19,14 +20,15 @@ databaseRef.child(id).once('value').then(function(snapshot){
     var project = snapshot.val()
     var mdToHtml = converter.makeHtml(project.content)
     var html = $([
-        '<div id="project-container" class="center card">',
-            '<h2 class="heading2 center">' + project.title + '</h2>',
-                '<div class="project-body">',
-                mdToHtml,
-                '</div>',
-            '</div>',
-        '</div>'
+        '<h1 class="center">' + project.title + '</h1>',
+        '<div id="project-body" class="center card">',
+            mdToHtml,
+        '</div>',
     ].join("\n"))
     $('#loader-container').fadeOut().remove()
     $("#body-container").html(html).fadeIn();
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+        console.log('highlighted');
+    });
 })
