@@ -19,14 +19,18 @@
  @media only screen 
  and (min-device-width : 320px) 
  and (max-device-width : 480px) {
-    #projects-container {
-        margin-top: 20px;
+    #project-body {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+        margin: 0px;
     }
-    #projects-list > div {
-        width: 85%;
+    
+    #project-body h1 {
+        font-size: 30px;
     }
-    .card-body {
-        padding: 5px 10px 10px 10px;
+    #project-body h2 {
+        font-size: 26px;
     }
  }
  
