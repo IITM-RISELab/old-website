@@ -9,8 +9,8 @@
 body {
   background-color: #f8f9fa;
   font-family: 'Archivo', sans-serif;
-  font-size: 22px;
-  padding-top: 8vh;
+  font-size: 20px;
+  padding-top: 70px;
 }
 
 a {
@@ -41,25 +41,24 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size: 44px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-size: 36px;
+  padding: 30px 0px 20px 0px;
+  margin: 0px;
 }
 
 h2 {
-  font-size: 34px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin: 20px 0px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 26px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   color: #2C3E50;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -67,13 +66,13 @@ h4 {
 
 h5 {
   font-size: 20px;
-  color: #E74C3C;
 }
 
 /* Navigation bar styles */
 
 #navigation-bar {
   padding: 0px;
+  height: 75px;
   background-color: #FDFEFE;
   -webkit-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
   -moz-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
@@ -154,7 +153,7 @@ h5 {
   outline: 0px;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   body {
     font-size: 18px;
   }
@@ -177,6 +176,135 @@ h5 {
   h5 {
     font-size: 18px;
   }
+} */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  body {
+    padding-top: 45px;
+    font-size: 16px;
+  }
+  .card {
+    padding: 5px;
+    margin: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  #navigation-bar {
+    height: auto;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 20px;
+  }
+  #navigation-bar a {
+    font-size: 16px;
+  }
+  .btn.btn-primary {
+    font-size: 16px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  body {
+    padding-top: 65px;
+    font-size: 20px;
+  }
+  .card {
+    padding: 5px;
+    margin: 20px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  #navigation-bar {
+    height: auto;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 30px;
+  }
+  #navigation-bar a {
+    font-size: 22px;
+  }
+  .btn.btn-primary {
+    font-size: 18px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }
 
 /* Loader symbol */

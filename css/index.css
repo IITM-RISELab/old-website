@@ -29,9 +29,9 @@ canvas#intro-canvas {
 }
 
 .btn-intro {
-    margin:50px auto !important;
+    margin:50px;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     background-color: rgba(0, 0, 0,0.0);
     /* border: 2px solid rgb(66, 192, 66); */
     border: 2px solid #28a78c;
@@ -52,11 +52,10 @@ canvas#intro-canvas {
 }
 
 #about-container {
-    padding-top: 30px;
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     #welcome-container > h1 {
         font-size: 46px;
     }
@@ -67,4 +66,77 @@ canvas#intro-canvas {
         width: 80%;
     }
 
-  }
+  } */
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    #welcome-container {
+        padding-top: 30vh;
+    }
+    #welcome-container > h1 {
+        font-size: 38px;
+    }
+    .btn-intro {
+        font-size: 14px;
+        margin: 60px;
+    }
+    #about-container{
+        width: 80%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

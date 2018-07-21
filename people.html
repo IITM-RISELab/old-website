@@ -27,7 +27,7 @@
 
 <body>
   <nav id="navigation-bar" class="navbar fixed-top navbar-expand-lg">
-    <a class="navbar-brand" href="index.html">R.I.S.E</a>
+    <a class="navbar-brand" href="index.html">R.I.S.E Group</a>
     <button class="navbar-toggler navbar-light navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -70,6 +70,9 @@
   <h1 class="heading1 center">Reconfigurable Intelligent Systems Engineering Laboratory</h1>
 
   <!-- People -->
+  <div id="loader-container" class="center container">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
   <div id="people-container">
     <div id="faculty-container" class="center">
       <h2>Faculty</h2>
@@ -81,7 +84,7 @@
             </div>
             <h3>Dr. V. Kamakoti.</h3>
             <h4>Designation</h4>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -91,7 +94,7 @@
             </div>
             <h3>Dr. Mitesh Khapra</h3>
             <h4>Designation</h4>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -101,7 +104,7 @@
             </div>
             <h3>Dr. Chester Rebeiro</h3>
             <h4>Designation</h4>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -111,7 +114,7 @@
             </div>
             <h3>Dr. Pratyush Panda</h3>
             <h4>Designation</h4>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -121,14 +124,55 @@
             </div>
             <h3>Dr. Harish Guruprasad</h3>
             <h4>Designation</h4>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
       </div>
     </div>
-    <div id="student-container" class="center">
+    <div id="member-container" class="center">
       <h2>Ongoing Phd Students</h2>
-      <div class="row">
+      <div id="phd-students">
+        <div class="row">
+
+        </div>
+      </div>
+      <h2>MS students</h2>
+      <div id="ms-students">
+        <div class="row">
+          
+        </div>
+      </div>
+      <h2>B.Tech Students</h2>
+      <div id="btech-students">
+        <div class="row">
+          
+        </div>
+      </div>
+      <h2>Dual Students</h2>
+      <div id="dual-students">
+        <div class="row">
+          
+        </div>
+      </div>
+      <h2>M.Tech Students</h2>
+      <div id="mtech-students">
+        <div class="row">
+          
+        </div>
+      </div>
+      <h2>Project Associates</h2>
+      <div id="project-associates">
+        <div class="row">
+          
+        </div>
+      </div>
+      <h2>Other Members</h2>
+      <div id="other-members">
+        <div class="row">
+          
+        </div>
+      </div>
+      <!-- <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-6">
           <div class="card bio-card">
             <div class="img-container-round center">
@@ -137,7 +181,7 @@
             <h3>Patanjali</h3>
             <h4>Energy Efficient computing and its implications</h4>
             <h5>Guide: Dr. V Kamakoti</h5>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-6">
@@ -148,13 +192,16 @@
             <h3>V. Prasanna Karthik</h3>
             <h4>Network Security</h4>
             <h5>Guide: Dr. V Kamakoti</h5>
-            <a class="btn btn-primary" href="#" role="button">Bio</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
           </div>
         </div>
-        </div>
+        </div> -->
     </div>
   </div>
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="js/loadPeople.js"></script>
 
 
 <!-- <div class="row">
