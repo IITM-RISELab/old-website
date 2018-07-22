@@ -29,8 +29,8 @@ function addProjectToHTML(project,id){
     var html = $([
         '<div class="card mx-auto">',
             '<div class="card-body">',
-                '<h2 class="heading2 center">'+ project.title +'</h2>',
-                '<p class="card-text center">' + project.info + '</p>',
+                '<h2 class="center">'+ project.title +'</h2>',
+                '<p class="center">' + project.info + '</p>',
                 '<a class="btn btn-primary center" href="project.html?id=' + id + '" role="button">Learn more</a>',
             '</div>',
         '</div>',

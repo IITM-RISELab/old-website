@@ -3,8 +3,11 @@
 }
 
 .card.bio-card {
-    padding: 20px 5px;
     height: 80%;
+}
+
+.card.bio-card > h2,h3,h4,h5,h6 {
+    text-align: center;
 }
 
 .img-container-round {
@@ -19,9 +22,6 @@
  and (min-device-width : 320px) 
  and (max-device-width : 480px) {
     .card.bio-card {
-        padding: 20px 5px;
-        width: auto;
-        height: auto;
         margin: 10px;
     }
  }
@@ -35,7 +35,11 @@
  /* Smartphones (portrait) ----------- */
  @media only screen 
  and (max-width : 320px) {
- /* Styles */
+    .card.bio-card {
+        padding: 20px 10px;
+        width: auto;
+        margin: 10px;
+    }
  }
  
  /* iPads (portrait and landscape) ----------- */
@@ -64,7 +68,11 @@
  /* Desktops and laptops ----------- */
  @media only screen 
  and (min-width : 1224px) {
- /* Styles */
+    .card.bio-card {
+        padding: 20px 10px;
+        width: auto;
+        margin: 30px;
+    }
  }
  
  /* Large screens ----------- */

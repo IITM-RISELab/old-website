@@ -9,8 +9,7 @@
 body {
   background-color: #f8f9fa;
   font-family: 'Archivo', sans-serif;
-  font-size: 20px;
-  padding-top: 70px;
+  padding: 0px;
 }
 
 a {
@@ -41,38 +40,23 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  font-size: 36px;
-  padding: 30px 0px 20px 0px;
-  margin: 0px;
-}
-
-h2 {
-  font-size: 32px;
-  margin: 20px 0px;
-}
-
-h3 {
-  font-size: 26px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 h4 {
-  font-size: 22px;
   color: #2C3E50;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
-h5 {
-  font-size: 20px;
+.container {
+  margin-top: 75px;
+  margin-bottom: 40px;
 }
 
 /* Navigation bar styles */
 
 #navigation-bar {
   padding: 0px;
-  height: 75px;
+  height: auto;
   background-color: #FDFEFE;
   -webkit-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
   -moz-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
@@ -81,7 +65,6 @@ h5 {
 
 #navigation-bar>.navbar-brand {
   font-family: 'Karla', sans-serif;
-  font-size: 30px;
 }
 
 #navigation-bar li {
@@ -95,7 +78,6 @@ h5 {
 #navigation-bar a {
   padding: 15px 10px;
   font-family: 'Karla', sans-serif;
-  font-size: 22px;
 }
 
 #navigation-bar .active>a {
@@ -107,8 +89,6 @@ h5 {
 /* Utility classes */
 
 .card {
-  padding: 10px;
-  margin: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #FDFEFE;
   transition: 0.2s all ease-in-out;
@@ -124,7 +104,6 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  text-align: center;
 }
 
 .faded {
@@ -138,63 +117,34 @@ h5 {
   margin: 10px auto;
 }
 
-.button {
-  background-color: #2ECC71;
-  border-radius: 40px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  padding: 15px 20px;
-  border: none;
-  color: darkslategray;
-  cursor: pointer;
+.vertical-align-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.button:focus {
-  outline: 0px;
+.vertical-align-middle-child {
+  align-self: center;
 }
-
-/* @media only screen and (max-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-  .card {
-    padding: 5px;
-    margin: 20px;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  h5 {
-    font-size: 18px;
-  }
-} */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-  body {
-    padding-top: 45px;
-    font-size: 16px;
-  }
   .card {
     padding: 5px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body {
+    font-size: 16px;
   }
   h1 {
     font-size: 24px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   h3 {
     font-size: 18px;
@@ -203,45 +153,66 @@ and (max-device-width : 480px) {
     font-size: 16px;
   }
   h5 {
-    font-size: 18px;
-  }
-  #navigation-bar {
-    height: auto;
+    font-size: 16px;
   }
   #navigation-bar>.navbar-brand {
-    font-size: 20px;
+    font-size: 18px;
   }
   #navigation-bar a {
-    font-size: 16px;
+    font-size: 14px;
   }
   .btn.btn-primary {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen 
+@media only screen
 and (min-width : 321px) {
-/* Styles */
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 18px;
+  }
+  #navigation-bar a {
+    font-size: 14px;
+  }
+  .btn.btn-primary {
+    font-size: 14px;
+  }
+  .container {
+    margin-top: 75px;
+    margin-bottom: 40px;
+  }
+  .card {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-  body {
+  /* body {
     padding-top: 65px;
-    font-size: 20px;
-  }
-  .card {
-    padding: 5px;
-    margin: 20px;
+    font-size: 16px;
   }
   h1 {
     font-size: 36px;
@@ -258,9 +229,6 @@ and (max-device-width : 1024px) {
   h5 {
     font-size: 16px;
   }
-  #navigation-bar {
-    height: auto;
-  }
   #navigation-bar>.navbar-brand {
     font-size: 30px;
   }
@@ -269,6 +237,19 @@ and (max-device-width : 1024px) {
   }
   .btn.btn-primary {
     font-size: 18px;
+  } */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .card {
+    padding: 5px;
+    margin: 20px;
+  }
+  #navigation-bar {
+    height: auto;
   }
 }
 
@@ -291,7 +272,54 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-/* Styles */
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    padding: 30px 0px 20px 0px;
+    margin: 0px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin: 20px 0px;
+  }
+  
+  h3 {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font-size: 20px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 30px;
+  }
+  #navigation-bar a {
+    font-size: 22px;
+  }
+  .btn.btn-primary {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .card {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .container {
+    margin-top: 75px;
+    margin-bottom: 40px;
+  }
 }
 
 /* Large screens ----------- */

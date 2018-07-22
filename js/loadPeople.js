@@ -40,15 +40,15 @@ function addPersonToHTML(person, id) {
     var html = $([
         '<div class="col-xs-12 col-md-6 col-lg-6">',
         '<div class="card bio-card">',
-        '<div class="img-container-round center">',
-            '<img src="' + photo_url + '" alt="profile picture">',
-        '</div>',
-        '<h3>' + person.name + '</h3>',
-        '<h4>' + person.area_of_research + '</h4>',
-        '<h5 style="color:blue"> Guide: ' + person.guide + '</h5>',
-        '<h5 style="color:#E74C3C"> Lab: ' + person.lab_name + '</h5>',
-        '<button id = "' + id + '"class="btn btn-primary">Learn more</button>',
-        // <a class="btn btn-primary" href="#" role="button">Bio</a>
+            '<div class="img-container-round center">',
+                '<img src="' + photo_url + '" alt="profile picture">',
+            '</div>',
+            '<h3 class="center">' + person.name + '</h3>',
+            '<h4 class="center">' + person.area_of_research + '</h4>',
+            '<h5 class="center" style="color:blue"> Guide: ' + person.guide + '</h5>',
+            '<h5 class="center" style="color:#E74C3C"> Lab: ' + person.lab_name + '</h5>',
+            '<button id = "' + id + '"class="btn btn-primary">Learn more</button>',
+            // <a class="btn btn-primary" href="#" role="button">Bio</a>
         '</div>',
         '</div>'
     ].join("\n"));

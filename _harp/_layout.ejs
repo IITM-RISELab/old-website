@@ -22,6 +22,9 @@
   <% if (current.source == 'project') { %>
     <link href="css/project.css" rel="stylesheet">
   <% } %>
+  <% if (current.source == 'contact') { %>
+    <link href="css/contact.css" rel="stylesheet">
+  <% } %>
   <link href="css/master.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
@@ -64,7 +67,7 @@
           </div>
         </li>
         <li class="nav-item  <%- current.source == 'contact' ? 'active' : '' %>">
-          <a class="nav-link" href="404.html">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
