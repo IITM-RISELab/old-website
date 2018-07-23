@@ -41,14 +41,36 @@ h1,h2,h3,h4,h5 {
 
 h1 {
   text-align: center;
+  font-size: 34px;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+h3 {
+  font-size: 26px;
 }
 
 h4 {
+  font-size: 22px;
   color: #2C3E50;
 }
 
+h5 {
+  font-size: 18px;
+}
+
+body {
+  font-size: 20px;
+}
+
 .container {
-  margin-top: 75px;
+  margin-top: 100px;
   margin-bottom: 40px;
 }
 
@@ -65,6 +87,7 @@ h4 {
 
 #navigation-bar>.navbar-brand {
   font-family: 'Karla', sans-serif;
+  font-size: 35px;
 }
 
 #navigation-bar li {
@@ -78,6 +101,7 @@ h4 {
 #navigation-bar a {
   padding: 15px 10px;
   font-family: 'Karla', sans-serif;
+  font-size: 20px;
 }
 
 #navigation-bar .active>a {
@@ -92,6 +116,8 @@ h4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #FDFEFE;
   transition: 0.2s all ease-in-out;
+  margin: 30px;
+  padding: 15px;
 }
 
 .card:hover {
@@ -114,7 +140,8 @@ h4 {
 .btn.btn-primary {
   color: #FDFEFE;
   width: 200px;
-  margin: 10px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .vertical-align-middle {
@@ -132,6 +159,9 @@ h4 {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  .container {
+    margin-top: 75px;
+  }
   .card {
     padding: 5px;
     margin-top: 20px;
@@ -167,7 +197,7 @@ and (max-device-width : 480px) {
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen
+/* @media only screen
 and (min-width : 321px) {
   body {
     font-size: 16px;
@@ -205,51 +235,53 @@ and (min-width : 321px) {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-}
+} */
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
+/* @media only screen 
 and (max-width : 320px) {
-  /* body {
-    padding-top: 65px;
-    font-size: 16px;
-  }
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-  h5 {
-    font-size: 16px;
-  }
-  #navigation-bar>.navbar-brand {
-    font-size: 30px;
-  }
-  #navigation-bar a {
-    font-size: 22px;
-  }
-  .btn.btn-primary {
-    font-size: 18px;
-  } */
-}
+  
+} */
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-  .card {
-    padding: 5px;
-    margin: 20px;
+  body {
+    font-size: 26px;
   }
-  #navigation-bar {
-    height: auto;
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 36px;
+  }
+  #navigation-bar a {
+    font-size: 26px;
+  }
+  .btn.btn-primary {
+    font-size: 22px;
+  }
+  .card {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container {
+    margin-top: 100px;
+    margin-bottom: 70px;
   }
 }
 

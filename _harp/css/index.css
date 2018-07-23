@@ -19,12 +19,13 @@ canvas#intro-canvas {
 #welcome-container > h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
+    font-size: 70px;
 }
 
 #about-container{
     display: none;
     align-self: start;
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
 .btn-intro {
@@ -32,6 +33,9 @@ canvas#intro-canvas {
     background-color: rgba(0, 0, 0,0.0);
     border: 2px solid #28a78c;
     border-radius: 40px;
+    padding: 20px;
+    font-size: 28px;
+    margin-top: 60px;
 }
 
 .btn-intro:hover {
@@ -62,14 +66,7 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-    #welcome-container > h1 {
-        font-size: 30px;
-    }
-    .btn-intro {
-        font-size: 12px;
-        padding: 10px;
-        margin-top: 40px;
-    }
+    
 }
 
 /* Smartphones (portrait) ----------- */
@@ -82,7 +79,17 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-/* Styles */
+    #welcome-container > h1 {
+        font-size: 70px;
+    }
+    .btn-intro {
+        font-size: 26px;
+        padding: 15px;
+        margin-top: 70px;
+    }
+    #about-container{
+        margin: 150px auto;
+    }
 }
 
 /* iPads (landscape) ----------- */

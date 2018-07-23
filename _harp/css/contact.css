@@ -1,3 +1,7 @@
+#form-card {
+    width: 80%;
+    padding: 40px;
+}
 #form-card >form > h2 {
     text-align: center;
 }
@@ -13,8 +17,9 @@
 }
 
 input.form-input {
-    padding: 2px;
+    padding: 3px;
     border-width: 0px 0px 2px 0px;
+    min-width: 45%;
 }
 
 textarea.form-input {
@@ -30,7 +35,8 @@ textarea.form-input {
 
 .form-input{
     display: block;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
