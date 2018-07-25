@@ -1,13 +1,6 @@
-#people-container {
-    display: none;
-}
-
-.card.bio-card {
-    height: 80%;
-}
-
-.card.bio-card > h2,h3,h4,h5,h6 {
-    text-align: center;
+.card.member-card {
+    padding: 50px 75px;
+    width: 65%;
 }
 
 .img-container-round {
@@ -17,13 +10,17 @@
     overflow: hidden;
 }
 
+.card.member-card h2,h3,h4,h5 {
+    text-align: center;
+}
 
  /* Smartphones (portrait and landscape) ----------- */
  @media only screen 
  and (min-device-width : 320px) 
  and (max-device-width : 480px) {
-    .card.bio-card {
-        margin: 10px;
+    .card.member-card {
+        padding: 10px 20px;
+        width: 95%;
     }
  }
  
@@ -36,18 +33,17 @@
  /* Smartphones (portrait) ----------- */
  @media only screen 
  and (max-width : 320px) {
-    .card.bio-card {
-        padding: 20px 10px;
-        width: auto;
-        margin: 10px;
-    }
- }
+ 
+}
  
  /* iPads (portrait and landscape) ----------- */
  @media only screen 
  and (min-device-width : 768px) 
  and (max-device-width : 1024px) {
- /* Styles */
+    .card.member-card {
+        padding: 20px 40px;
+        width: 85%;
+    }
  }
  
  /* iPads (landscape) ----------- */
@@ -69,11 +65,11 @@
  /* Desktops and laptops ----------- */
  @media only screen 
  and (min-width : 1224px) {
-    .card.bio-card {
-        padding: 20px 10px;
-        width: auto;
-        margin: 30px;
+    .card.member-card {
+        padding: 30px 75px;
+        width: 70%;
     }
+
  }
  
  /* Large screens ----------- */

@@ -140,7 +140,7 @@ body {
 .btn.btn-primary {
   color: #FDFEFE;
   width: 200px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -199,42 +199,7 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 /* @media only screen
 and (min-width : 321px) {
-  body {
-    font-size: 16px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-  h5 {
-    font-size: 16px;
-  }
-  #navigation-bar>.navbar-brand {
-    font-size: 18px;
-  }
-  #navigation-bar a {
-    font-size: 14px;
-  }
-  .btn.btn-primary {
-    font-size: 14px;
-  }
-  .container {
-    margin-top: 75px;
-    margin-bottom: 40px;
-  }
-  .card {
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+  
 } */
 
 /* Smartphones (portrait) ----------- */
