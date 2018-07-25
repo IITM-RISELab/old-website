@@ -28,7 +28,7 @@ databaseRef.child(id).once('value').then(function(snapshot){
             '<h4 class="center" style="color:blue"> Guide: ' + person.guide + '</h4>',
             '<h5 class="center" style="color:#E74C3C"> Lab: ' + person.lab_name + '</h5>',
             '<p class="center" >' + person.bio + '</p>',
-            '<a class="btn btn-primary center" href="' + person.bio_url + '" role="button">Portfolio</a>',
+            '<a class="btn btn-info center" href="' + person.bio_url + '" role="button">Portfolio</a>',
         '</div>'
     ].join("\n"))
     $('#loader-container').fadeOut().remove()

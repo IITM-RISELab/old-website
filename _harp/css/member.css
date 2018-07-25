@@ -1,6 +1,6 @@
 .card.member-card {
     padding: 50px 75px;
-    width: 65%;
+    width: 90%;
 }
 
 .img-container-round {
@@ -14,6 +14,10 @@
     text-align: center;
 }
 
+.card.member-card p {
+    padding: 10px 10px;
+}
+
  /* Smartphones (portrait and landscape) ----------- */
  @media only screen 
  and (min-device-width : 320px) 
@@ -21,6 +25,9 @@
     .card.member-card {
         padding: 10px 20px;
         width: 95%;
+    }
+    .card.member-card p {
+        padding: 10px 5px;
     }
  }
  
@@ -43,6 +50,9 @@
     .card.member-card {
         padding: 20px 40px;
         width: 85%;
+    }
+    .card.member-card p {
+        padding: 15px 7px;
     }
  }
  
@@ -68,6 +78,9 @@
     .card.member-card {
         padding: 30px 75px;
         width: 70%;
+    }
+    .card.member-card p {
+        padding: 20px 10px;
     }
 
  }

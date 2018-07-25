@@ -47,7 +47,7 @@ function addPersonToHTML(person, id) {
             '<h4 class="center">' + person.area_of_research + '</h4>',
             '<h5 class="center" style="color:blue"> Guide: ' + person.guide + '</h5>',
             '<h5 class="center" style="color:#E74C3C"> Lab: ' + person.lab_name + '</h5>',
-            '<a class="btn btn-primary center" href="/member.html?id=' + id + '" role="button">Learn more</a>',
+            '<a class="btn btn-primary center" href="member.html?id=' + id + '" role="button">Learn more</a>',
             // <a class="btn btn-primary" href="#" role="button">Bio</a>
         '</div>',
         '</div>'

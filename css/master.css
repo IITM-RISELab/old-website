@@ -137,10 +137,10 @@ body {
   transition: 0.3s all ease-in;
 }
 
-.btn.btn-primary {
+.btn.btn-primary, .btn.btn-info {
   color: #FDFEFE;
   width: 200px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -191,8 +191,10 @@ and (max-device-width : 480px) {
   #navigation-bar a {
     font-size: 14px;
   }
-  .btn.btn-primary {
+  .btn.btn-primary, .btn.btn-info {
     font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -236,8 +238,9 @@ and (max-device-width : 1024px) {
   #navigation-bar a {
     font-size: 26px;
   }
-  .btn.btn-primary {
+  .btn.btn-primary, .btn.btn-info {
     font-size: 22px;
+    margin-top: 15px;
   }
   .card {
     padding: 10px;
@@ -304,9 +307,11 @@ and (min-width : 1224px) {
   #navigation-bar a {
     font-size: 22px;
   }
-  .btn.btn-primary {
+  .btn.btn-primary, .btn.btn-info {
     font-size: 18px;
     padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .card {
     padding: 10px;
