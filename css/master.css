@@ -1,0 +1,448 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Karla|Montserrat|Archivo');
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Archivo', sans-serif;
+  padding: 0px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+  color: #2C3E50;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+body {
+  font-size: 20px;
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+/* Navigation bar styles */
+
+#navigation-bar {
+  padding: 0px;
+  height: auto;
+  background-color: #FDFEFE;
+  -webkit-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
+  -moz-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
+  box-shadow: 0px 4px 8px -1px rgba(135, 128, 135, 0.2)
+}
+
+#navigation-bar>.navbar-brand {
+  font-family: 'Karla', sans-serif;
+  font-size: 35px;
+}
+
+#navigation-bar li {
+  margin: 0px 5px;
+}
+
+#navigation-bar li:last-child {
+  margin-right: 30px;
+}
+
+#navigation-bar a {
+  padding: 15px 10px;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+}
+
+#navigation-bar .active>a {
+  pointer-events: none;
+  color: #2ECC71;
+  font-weight: 550;
+}
+
+/* Utility classes */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #FDFEFE;
+  transition: 0.2s all ease-in-out;
+  margin: 30px;
+  padding: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s all ease-in-out;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.faded {
+  opacity: 0.3;
+  transition: 0.3s all ease-in;
+}
+
+.btn.btn-primary, .btn.btn-info {
+  color: #FDFEFE;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vertical-align-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.vertical-align-middle-child {
+  align-self: center;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .container {
+    margin-top: 75px;
+  }
+  .card {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 18px;
+  }
+  #navigation-bar a {
+    font-size: 14px;
+  }
+  .btn.btn-primary, .btn.btn-info {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+/* @media only screen
+and (min-width : 321px) {
+  
+} */
+
+/* Smartphones (portrait) ----------- */
+/* @media only screen 
+and (max-width : 320px) {
+  
+} */
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  body {
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 36px;
+  }
+  #navigation-bar a {
+    font-size: 26px;
+  }
+  .btn.btn-primary, .btn.btn-info {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .card {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    padding: 30px 0px 20px 0px;
+    margin: 0px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin: 20px 0px;
+  }
+  
+  h3 {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font-size: 20px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 30px;
+  }
+  #navigation-bar a {
+    font-size: 22px;
+  }
+  .btn.btn-primary, .btn.btn-info {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .container {
+    margin-top: 75px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+/* Loader symbol */
+
+#loader-container {
+  margin-top: 40vh;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(37, 109, 151);
+  margin: -3px 0 0 -3px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

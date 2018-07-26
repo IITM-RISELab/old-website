@@ -1,0 +1,139 @@
+canvas#intro-canvas {
+    left: 0px;
+    width: 150%;
+    height: 100%;
+    background: #eaedf0;
+    position: fixed;
+    z-index: -1;
+    transition: 0.3s all ease-in;
+}
+
+#intro-container{
+   width: 70%;
+}
+
+#welcome-container{
+    margin: 0px auto;
+}
+
+#welcome-container > h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 70px;
+}
+
+#about-container{
+    display: none;
+    align-self: start;
+    margin: 100px auto;
+}
+
+.btn-intro {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(0, 0, 0,0.0);
+    border: 2px solid #28a78c;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 28px;
+    margin-top: 60px;
+}
+
+.btn-intro:hover {
+    background-color: #28a78c;
+    color: #FFF;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.btn-intro:focus {
+    outline: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    #welcome-container > h1 {
+        font-size: 30px;
+    }
+    .btn-intro {
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    #welcome-container > h1 {
+        font-size: 70px;
+    }
+    .btn-intro {
+        font-size: 26px;
+        padding: 15px;
+        margin-top: 70px;
+    }
+    #about-container{
+        margin: 150px auto;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    #welcome-container > h1 {
+        font-size: 100px;
+    }
+    #about-container {
+        margin: 80px auto;
+        width: 80%;
+    }
+    .btn-intro {
+        margin-top:50px;
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

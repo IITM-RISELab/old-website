@@ -10,12 +10,24 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  
-  
-  
-  
-  
-  
+  <% if (current.source == 'index') { %>
+    <link href="css/index.css" rel="stylesheet">
+  <% } %>
+  <% if (current.source == 'projects') { %>
+    <link href="css/projects.css" rel="stylesheet">
+  <% } %>
+  <% if (current.source == 'people') { %>
+    <link href="css/people.css" rel="stylesheet">
+  <% } %>
+  <% if (current.source == 'project') { %>
+    <link href="css/project.css" rel="stylesheet">
+  <% } %>
+  <% if (current.source == 'contact') { %>
+    <link href="css/contact.css" rel="stylesheet">
+  <% } %>
+  <% if (current.source == 'member') { %>
+    <link href="css/member.css" rel="stylesheet">
+  <% } %>
   <link href="css/master.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
@@ -34,16 +46,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item  ">
+        <li class="nav-item  <%- current.source == 'index' ? 'active' : '' %>">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item  ">
+        <li class="nav-item  <%- current.source == 'people' ? 'active' : '' %>">
           <a class="nav-link" href="people.html">People</a>
         </li>
-        <li class="nav-item  ">
+        <li class="nav-item  <%- current.source == 'projects' ? 'active' : '' %>">
           <a class="nav-link" href="projects.html">Projects</a>
         </li>
-        <li class="nav-item  active">
+        <li class="nav-item  <%- current.source == 'publications' ? 'active' : '' %>">
           <a class="nav-link" href="publications.html">Publications</a>
         </li>
         <li class="nav-item dropdown">
@@ -57,7 +69,7 @@
             <a class="dropdown-item" href="portfolio-4-col.html">4 SSG</a>
           </div>
         </li>
-        <li class="nav-item  ">
+        <li class="nav-item  <%- current.source == 'contact' ? 'active' : '' %>">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -65,12 +77,7 @@
   </nav>
 
   <!-- Page Content gets inserted here -->
-  <!-- Page Content -->
-<div class="container">
-        <h1 class="center">Reconfigurable Intelligent Systems Engineering Laboratory</h1>
-    <h2 class="center">Publications</h2>
-    <script src="https://bibbase.org/show?bib=https://dblp.org/pid/145/7783.bib&jsonp=1"></script>
-</div>
+  <%- yield %>
 
 </body>
 
