@@ -21,7 +21,7 @@ databaseRef.child(id).once('value').then(function(snapshot){
     var mdToHtml = converter.makeHtml(project.content)
     var html = $([
         '<h1 class="center">' + project.title + '</h1>',
-        '<div id="project-body" class="center card">',
+        '<div id="project-body" class="center">',
             mdToHtml,
         '</div>',
     ].join("\n"))
