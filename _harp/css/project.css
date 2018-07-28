@@ -1,10 +1,13 @@
 #project-body {
     text-align: left;
     padding: 20px 75px;
+    /* font-family: 'Geomanist',Helvetica,sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 #project-body h1,h2,h3,h4,h5,h6 {
     color: #2980B9;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
  /* Smartphones (portrait and landscape) ----------- */
@@ -105,14 +108,21 @@
  @media only screen 
  and (min-width : 1224px) {
     #project-body {
-        padding: 20px 55px;
-        width: 75%;
+        padding: 10px 55px;
+        width: 85%;
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 18px;
+        font-size: 20px;
+    }
+    #project-body p {
+        line-height: 1.7rem;
+    }
+    #project-body li, #project-body ol {
+        margin: 10px 0px;
     }
     #project-body h1 {
         font-size: 38px;
+        padding: 10px 0px;
     }
     
     #project-body h2 {

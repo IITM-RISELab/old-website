@@ -3,19 +3,21 @@
     width: 90%;
 }
 
-.img-container-round {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
 .card.member-card h2,h3,h4,h5 {
     text-align: center;
+    margin: 20px auto;
 }
 
 .card.member-card p {
     padding: 10px 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.7rem;
+}
+
+.card.member-card img {
+    width: auto;
+    max-height: 150px;
+    border: 3px solid lightsteelblue;
 }
 
  /* Smartphones (portrait and landscape) ----------- */
@@ -27,7 +29,7 @@
         width: 95%;
     }
     .card.member-card p {
-        padding: 10px 5px;
+        padding: 5px 5px;
     }
  }
  
@@ -52,7 +54,7 @@
         width: 85%;
     }
     .card.member-card p {
-        padding: 15px 7px;
+        padding: 7px 7px;
     }
  }
  
@@ -75,12 +77,17 @@
  /* Desktops and laptops ----------- */
  @media only screen 
  and (min-width : 1224px) {
+    .card.member-card img {
+        width: auto;
+        max-height: 200px;
+        border: 3px solid lightsteelblue;
+    }
     .card.member-card {
         padding: 30px 75px;
         width: 70%;
     }
     .card.member-card p {
-        padding: 20px 10px;
+        padding: 10px 10px;
     }
 
  }

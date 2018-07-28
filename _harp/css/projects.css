@@ -5,6 +5,11 @@
 #projects-list > div {
     width: 65%;
 }
+
+#projects-list > .card {
+    margin: 50px auto;
+}
+
 .card-body > h2,p {
     text-align: center;
 }

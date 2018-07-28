@@ -30,23 +30,24 @@ canvas#intro-canvas {
 
 .btn-intro {
     font-family: 'Lato', sans-serif;
-    background-color: rgba(0, 0, 0,0.0);
-    border: 2px solid #28a78c;
+    background-color: #28a78c;
+    color: #ffffff;
+    border: none;
     border-radius: 40px;
-    padding: 20px;
     font-size: 28px;
     margin-top: 60px;
+    transition: 0.2s all ease-in-out;
 }
 
 .btn-intro:hover {
-    background-color: #28a78c;
-    color: #FFF;
-    transition: 0.1s ease-in;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .btn-intro:focus {
     outline: none;
+    background-color: #1f836d;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
