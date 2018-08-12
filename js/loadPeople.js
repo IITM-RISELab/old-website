@@ -38,7 +38,7 @@ databaseRef.once("value", function (snapshot) {
 function addPersonToHTML(person, id) {
     var photo_url = getEmbeddablePhotoURL(person.photo_url);
     var html = $([
-        '<div class="col-xs-12 col-md-6 col-lg-6">',
+        '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">',
         '<div class="card bio-card">',
             '<div class="img-container-round center">',
                 '<img src="' + photo_url + '" alt="profile picture">',

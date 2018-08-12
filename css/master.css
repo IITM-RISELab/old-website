@@ -68,18 +68,18 @@
    font-size: 20px;
  }
  
- .container {
+.container {
    margin-top: 100px;
    margin-bottom: 40px;
  }
 
-  .btn.btn-primary , .btn.btn-info {
+.btn.btn-primary , .btn.btn-info {
   font-family: 'Lato', sans-serif;
-  background-color: #28a78c;
+  background-color: #2ECC71;
   color: #ffffff;
   border: none;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.2s all ease-in-out;
 }
 
@@ -109,7 +109,7 @@
    box-shadow: 0px 4px 8px -1px rgba(135, 128, 135, 0.2)
  }
  
- #navigation-bar>.navbar-brand {
+ #navigation-bar > .navbar-brand {
    font-family: 'Karla', sans-serif;
    font-size: 35px;
  }
@@ -128,7 +128,7 @@
    font-size: 20px;
  }
  
- #navigation-bar .active>a {
+ #navigation-bar .active > a {
    pointer-events: none;
    color: #2ECC71;
    font-weight: 550;
@@ -185,6 +185,7 @@
  }
  
  .vertical-align-middle-child {
+   flex: 1;
    align-self: center;
  }
  
@@ -232,10 +233,12 @@
  }
  
  /* Smartphones (landscape) ----------- */
- /* @media only screen
- and (min-width : 321px) {
-   
- } */
+ @media only screen
+ and (min-width : 320px) {
+   .btn.btn-primary, .btn.btn-info {
+     padding: 10px 10px;
+   } 
+ }
  
  /* Smartphones (portrait) ----------- */
  /* @media only screen 
