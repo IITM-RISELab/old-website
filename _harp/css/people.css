@@ -6,8 +6,14 @@
     height: 80%;
 }
 
-.card.bio-card > h2,h3,h4,h5,h6 {
+.card.bio-card > h1,h2,h3 {
     text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.card.bio-card > h4,h5,h6 {
+    text-align: center;
+    color: #2C3E50;
 }
 
 .img-container-round {
@@ -16,6 +22,7 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
 
 
  /* Smartphones (portrait and landscape) ----------- */
