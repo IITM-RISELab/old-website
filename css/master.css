@@ -72,6 +72,31 @@
    margin-top: 100px;
    margin-bottom: 40px;
  }
+
+  .btn.btn-primary , .btn.btn-info {
+  font-family: 'Lato', sans-serif;
+  background-color: #28a78c;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn.btn-primary:hover , .btn.btn-info:hover{
+  transition: 0.2s all ease-in-out;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.btn.btn-primary:focus , .btn.btn-info:focus {
+  outline: none;
+  background-color: #1f836d;
+}
+.btn.btn-primary:active , .btn.btn-info:active {
+  outline: none;
+  background-color: #1f836d;
+}
  
  /* Navigation bar styles */
  
@@ -137,7 +162,6 @@
  }
  
  .btn.btn-primary, .btn.btn-info {
-   color: #FDFEFE;
    width: 200px;
    margin-top: 20px;
    margin-bottom: 20px;

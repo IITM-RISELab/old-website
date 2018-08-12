@@ -45,8 +45,8 @@ function addPersonToHTML(person, id) {
             '</div>',
             '<h3 class="center">' + person.name + '</h3>',
             '<h4 class="center">' + person.area_of_research + '</h4>',
-            '<h5 class="center" style="color:blue"> Guide: ' + person.guide + '</h5>',
-            '<h5 class="center" style="color:#E74C3C"> Lab: ' + person.lab_name + '</h5>',
+            '<h5 class="center"><span style="color:#0c60d0">Guide : </span>' + person.guide + '</h5>',
+            '<h5 class="center"><span style="color:#0c60d0">Lab : </span>' + person.lab_name + '</h5>',
             '<a class="btn btn-primary center" href="member.html?id=' + id + '" role="button">Learn more</a>',
             // <a class="btn btn-primary" href="#" role="button">Bio</a>
         '</div>',
@@ -69,6 +69,6 @@ function getEmbeddablePhotoURL(url){
     if(match !== null)
         embeddableLink = 'https://drive.google.com/uc?id=' + match[1];
     else
-        embeddableLink = "https://raw.githubusercontent.com/AkshayRaman97/iitm-riselab-dev.github.io/master/_harp/assets/dummy-profile.jpeg"
+        embeddableLink = "https://raw.githubusercontent.com/IITM-RISELab/iitm-riselab.github.io/master/assets/dummy-profile.jpeg"
     return(embeddableLink);
 }
