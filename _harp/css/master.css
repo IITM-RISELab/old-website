@@ -134,6 +134,16 @@
    font-weight: 550;
  }
  
+ .dropdown-item.active {
+   background-color: #2ECC71;
+ }
+ .dropdown-item.active:active {
+  background-color: #2ECC71;
+}
+.dropdown-item:active{
+  background-color: #2ECC71;
+}
+ 
  /* Utility classes */
  
  .card {
