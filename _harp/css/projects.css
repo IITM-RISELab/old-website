@@ -6,8 +6,9 @@
     width: 65%;
 }
 
-#projects-list > .card {
+#projects-list > .card-container >.card {
     margin: 50px auto;
+    height: 80%;
 }
 
 .card-body > h2,p {
