@@ -6,19 +6,25 @@
     height: 80%;
 }
 
+.card.bio-card > h1 {
+
+}
+.card.bio-card > h2 {
+
+}
+.card.bio-card > h3 {
+
+}
+
 .card.bio-card > h1,h2,h3 {
     text-align: center;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.card.bio-card > h4,h5,h6 {
-    text-align: center;
-    color: #2C3E50;
-}
-
 .img-container-round {
     height: 125px;
     width: 125px;
+    margin: 5px auto;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -50,11 +56,27 @@
     }
  }
  
- /* iPads (portrait and landscape) ----------- */
+ /* Tabs and above ----------- */
  @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) {
- /* Styles */
+ and (min-device-width : 768px) {
+    .card.bio-card {
+        padding: 20px 10px;
+        width: 90%;
+        margin: 30px;
+    }
+    .card.bio-card > h1 {
+        font-size: 26px;
+        margin: 5px auto;
+        padding: 0px;
+    }
+    .card.bio-card > h2 {
+        font-size: 22px;
+        margin: 10px auto;
+    }
+    .card.bio-card > h3 {
+        font-size: 18px;
+        margin: 5px auto;
+    }
  }
  
  /* iPads (landscape) ----------- */
@@ -70,17 +92,13 @@
  and (min-device-width : 768px) 
  and (max-device-width : 1024px) 
  and (orientation : portrait) {
- /* Styles */
+    
  }
  
  /* Desktops and laptops ----------- */
  @media only screen 
- and (min-width : 1224px) {
-    .card.bio-card {
-        padding: 20px 10px;
-        width: auto;
-        margin: 30px;
-    }
+ and (min-width : 1024px) {
+    
  }
  
  /* Large screens ----------- */

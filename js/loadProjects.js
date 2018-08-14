@@ -28,11 +28,11 @@ databaseRef.once("value", function (snapshot) {
 function addProjectToHTML(project, id) {
     var html = $([
         '<div class="card-container center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">',
-        '<div class="card mx-auto">',
+        '<div class="card">',
         '<div class="card-body">',
-        '<h2 class="center">' + project.title + '</h2>',
-        '<h4 class="center"><span style="color:#38b538" >Incharge : </span>' + project.faculty + '</h4>',
-        '<h4 class="center"><span style="color:#38b538" >Status : </span>' + project.status + '</h4>',
+        '<h1 class="center">' + project.title + '</h2>',
+        '<h2 class="center"><span style="color:#38b538" >Incharge : </span>' + project.faculty + '</h4>',
+        '<h2 class="center"><span style="color:#38b538" >Status : </span>' + project.status + '</h4>',
         '<a class="btn btn-primary center" href="project.html?id=' + id + '" role="button">Learn more</a>',
         '</div>',
         '</div>',

@@ -38,15 +38,15 @@ databaseRef.once("value", function (snapshot) {
 function addPersonToHTML(person, id) {
     var photo_url = getEmbeddablePhotoURL(person.photo_url);
     var html = $([
-        '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">',
+        '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">',
         '<div class="card bio-card">',
             '<div class="img-container-round center">',
                 '<img src="' + photo_url + '" alt="profile picture">',
             '</div>',
-            '<h3 class="center">' + person.name + '</h3>',
-            '<h4 class="center">' + person.area_of_research + '</h4>',
-            '<h5 class="center"><span style="color:#0c60d0">Guide : </span>' + person.guide + '</h5>',
-            '<h5 class="center"><span style="color:#0c60d0">Lab : </span>' + person.lab_name + '</h5>',
+            '<h1 class="center">' + person.name + '</h3>',
+            '<h2 class="center">' + person.area_of_research + '</h4>',
+            '<h3 class="center"><span style="color:#0c60d0">Guide : </span>' + person.guide + '</h5>',
+            '<h3 class="center"><span style="color:#0c60d0">Lab : </span>' + person.lab_name + '</h5>',
             '<a class="btn btn-primary center" href="member.html?id=' + id + '" role="button">Learn more</a>',
             // <a class="btn btn-primary" href="#" role="button">Bio</a>
         '</div>',
@@ -69,6 +69,6 @@ function getEmbeddablePhotoURL(url){
     if(match !== null)
         embeddableLink = 'https://drive.google.com/uc?id=' + match[1];
     else
-        embeddableLink = "https://raw.githubusercontent.com/IITM-RISELab/iitm-riselab.github.io/master/assets/dummy-profile.jpeg"
+        embeddableLink = "https://raw.githubusercontent.com/AkshayRaman97/iitm-riselab-dev.github.io/master/_harp/assets/dummy-profile.jpeg"
     return(embeddableLink);
 }

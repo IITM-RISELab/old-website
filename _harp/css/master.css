@@ -57,7 +57,6 @@
  
  h4 {
    font-size: 22px;
-   color: #2C3E50;
  }
  
  h5 {
@@ -71,7 +70,7 @@
 .container {
    margin-top: 100px;
    margin-bottom: 40px;
- }
+}
 
 .btn.btn-primary , .btn.btn-info {
   font-family: 'Lato', sans-serif;
@@ -92,10 +91,17 @@
 .btn.btn-primary:focus , .btn.btn-info:focus {
   outline: none;
   background-color: #1f836d;
+  box-shadow: 0 0 0 0.2rem #2ecc7170;
 }
 .btn.btn-primary:active , .btn.btn-info:active {
   outline: none;
-  background-color: #1f836d;
+  background-color: #1f836d !important;
+}
+
+.btn.btn-primary:focus:active , .btn.btn-info:focus:active {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #2ecc7170 !important;
+  background-color: #1f836d !important;
 }
  
  /* Navigation bar styles */
@@ -113,10 +119,11 @@
    font-family: 'Karla', sans-serif;
    font-size: 35px;
  }
- 
+
  #navigation-bar li {
-   margin: 0px 5px;
- }
+  margin: 0px 5px;
+  transition: 0.2s all ease-in;
+}
  
  #navigation-bar li:last-child {
    margin-right: 30px;
@@ -134,6 +141,13 @@
    font-weight: 550;
  }
  
+@media only screen and (min-width: 992px) {
+  .navbar-nav > .nav-item:hover > a {
+    transition: 0.2s all ease-in;
+    transform: scale(1.1);
+  }
+}
+
  .dropdown-item.active {
    background-color: #2ECC71;
  }

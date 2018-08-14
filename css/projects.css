@@ -6,9 +6,13 @@
     width: 65%;
 }
 
-#projects-list > .card-container >.card {
+.card-container > .card {
     margin: 50px auto;
-    height: 80%;
+    height: auto;
+}
+
+.card-body > h1,h2 {
+    text-align: center;
 }
 
 .card-body > h2,p {
@@ -39,12 +43,17 @@
  /* Styles */
  }
  
- /* iPads (portrait and landscape) ----------- */
+ /* iPads , PCs ----------- */
  @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) {
-    .card.mx-auto {
+ and (min-device-width : 768px) {
+    .card {
         margin: 40px;
+    }
+    .card-body > h1 {
+        font-size: 26px;
+    }
+    .card-body > h2 {
+        font-size: 20px;
     }
  }
  
@@ -66,7 +75,7 @@
  
  /* Desktops and laptops ----------- */
  @media only screen 
- and (min-width : 1224px) {
+ and (min-width : 1024px) {
  /* Styles */
  }
  
