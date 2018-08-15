@@ -1,23 +1,13 @@
-.btn-intro {
-    font-family: 'Lato', sans-serif;
-    background-color: #28a78c;
-    color: #ffffff;
-    border: none;
-    border-radius: 40px;
-    font-size: 28px;
-    margin-top: 60px;
-    transition: 0.2s all ease-in-out;
+.opening-card > h1 {
+
 }
 
-.btn-intro:hover {
-    transition: 0.2s all ease-in-out;
-    transform: scale(1.1);
-    cursor: pointer;
+.opening-card > h2 {
+
 }
 
-.btn-intro:focus {
-    outline: none;
-    background-color: #1f836d;
+.opening-card > h3 {
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -71,8 +61,14 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1024px) {
-    #intro-container {
-        width: 55%;
+    .opening-card > h1 {
+        font-size: 28px;
+    }
+    .opening-card > h2 {
+    
+    }
+    .opening-card > h3 {
+    
     }
 }
 
