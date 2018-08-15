@@ -47,9 +47,9 @@ function addPersonToHTML(person, id) {
             '<h2 class="center">' + person.area_of_research + '</h2>',
             '<h3 class="center"><span style="color:#0c60d0">Guide : </span>' + person.guide + '</h3>',
             '<h3 class="center"><span style="color:#0c60d0">Lab : </span>' + person.lab_name + '</h3>',
-            '<a class="btn btn-primary center" href="member.html?id=' + id + '" role="button">Learn more</a>',
             // <a class="btn btn-primary" href="#" role="button">Bio</a>
-        '</div>',
+            '<a class="btn btn-primary center" href="member.html?id=' + id + '" role="button">Learn more</a>',
+            '</div>',
         '</div>'
     ].join("\n"));
     var section = getSection(person.designation);

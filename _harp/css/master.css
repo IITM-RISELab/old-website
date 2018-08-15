@@ -178,6 +178,7 @@
    margin-left: auto;
    margin-right: auto;
    width: fit-content;
+   width: -moz-fit-content;
  }
  
  .faded {
@@ -189,13 +190,6 @@
    width: 200px;
    margin-top: 20px;
    margin-bottom: 20px;
- }
- 
- /* Smartphones (portrait and landscape) ----------- */
- @media only screen 
- and (min-device-width : 320px) 
- and (max-device-width : 480px) {
-   
  }
  
  /* Smartphones ----------- */
@@ -243,12 +237,6 @@
    } 
  }
  
- /* Smartphones (portrait) ----------- */
- /* @media only screen 
- and (max-width : 320px) {
-   
- } */
- 
  /* iPads , PCs ----------- */
  @media only screen 
  and (min-width : 768px){
@@ -278,8 +266,8 @@
      padding: 15px 5px;
    }
    .btn.btn-primary, .btn.btn-info {
-     font-size: 22px;
-     margin-top: 15px;
+     font-size: 18px;
+     margin-top: 12px;
    }
    .card {
      padding: 10px;
@@ -290,22 +278,6 @@
      margin-top: 100px;
      margin-bottom: 70px;
    }
- }
- 
- /* iPads (landscape) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : landscape) {
- /* Styles */
- }
- 
- /* iPads (portrait) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : portrait) {
- /* Styles */
  }
  
  /* Desktops and laptops ----------- */
@@ -377,10 +349,16 @@
  /* Styles */
  }
  
+
  /* Loader symbol */
  
  #loader-container {
-   margin-top: 40vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
  }
  
  .lds-roller {

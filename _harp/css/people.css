@@ -3,108 +3,129 @@
 }
 
 .card.bio-card {
-    height: 80%;
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+    padding: 20px;
 }
 
-.card.bio-card > h1 {
+.bio-card > h1 {
 
 }
-.card.bio-card > h2 {
+.bio-card > h2 {
 
 }
-.card.bio-card > h3 {
+.bio-card > h3 {
 
 }
 
-.card.bio-card > h1,h2,h3 {
+.bio-card > h1,h2,h3 {
     text-align: center;
     color: rgba(0, 0, 0, 0.87);
 }
 
 .img-container-round {
-    height: 125px;
-    width: 125px;
-    margin: 5px auto;
+    margin: 10px auto;
+    height: 100px;
+}
+
+.img-container-round > img {
+    height: 100px;
+    width: auto;
+    margin: 0px auto;
     border-radius: 50%;
-    overflow: hidden;
 }
 
 
 
  /* Smartphones (portrait and landscape) ----------- */
  @media only screen 
- and (min-device-width : 320px) 
- and (max-device-width : 480px) {
-    .card.bio-card {
-        margin: 10px;
+ and (min-width : 320px) {
+    .bio-card {
+        padding: 10px 5px;
+        width: 90%;
     }
- }
- 
- /* Smartphones (landscape) ----------- */
- @media only screen 
- and (min-width : 321px) {
-    
- }
- 
- /* Smartphones (portrait) ----------- */
- @media only screen 
- and (max-width : 320px) {
-    .card.bio-card {
-        padding: 20px 10px;
-        width: auto;
-        margin: 10px;
+    .bio-card > h1 {
+        font-size: 22px;
+        margin: 5px auto;
+        padding: 0px;
+    }
+    .bio-card > h2 {
+        font-size: 18px;
+        margin: 10px auto;
+    }
+    .bio-card > h3 {
+        font-size: 16px;
+        margin: 5px auto;
     }
  }
  
  /* Tabs and above ----------- */
  @media only screen 
- and (min-device-width : 768px) {
-    .card.bio-card {
+ and (min-width : 768px) {
+    .bio-card {
         padding: 20px 10px;
         width: 90%;
-        margin: 30px;
     }
-    .card.bio-card > h1 {
-        font-size: 26px;
+    .bio-card > h1 {
+        font-size: 24px;
         margin: 5px auto;
         padding: 0px;
     }
-    .card.bio-card > h2 {
-        font-size: 22px;
+    .bio-card > h2 {
+        font-size: 20px;
         margin: 10px auto;
     }
-    .card.bio-card > h3 {
+    .bio-card > h3 {
         font-size: 18px;
         margin: 5px auto;
     }
  }
  
- /* iPads (landscape) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : landscape) {
- /* Styles */
- }
- 
- /* iPads (portrait) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : portrait) {
-    
- }
- 
  /* Desktops and laptops ----------- */
  @media only screen 
  and (min-width : 1024px) {
-    
+    .bio-card {
+        padding: 20px 10px;
+        width: 90%;
+        margin: 30px;
+    }
+    .bio-card > h1 {
+        font-size: 26px;
+        margin: 5px auto;
+        padding: 0px;
+    }
+    .bio-card > h2 {
+        font-size: 22px;
+        margin: 10px auto;
+    }
+    .bio-card > h3 {
+        font-size: 20px;
+        margin: 5px auto;
+    }
  }
  
  /* Large screens ----------- */
  @media only screen 
  and (min-width : 1824px) {
- /* Styles */
+    .bio-card {
+        padding: 20px 10px;
+        width: 90%;
+        margin: 30px;
+    }
+    .bio-card > h1 {
+        font-size: 28px;
+        margin: 5px auto;
+        padding: 0px;
+    }
+    .bio-card > h2 {
+        font-size: 21px;
+        margin: 10px auto;
+    }
+    .bio-card > h3 {
+        font-size: 20px;
+        margin: 5px auto;
+    }
  }
  
  /* iPhone 4 ----------- */
