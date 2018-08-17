@@ -18,7 +18,7 @@ databaseRef.child(id).once('value').then(function(snapshot){
     var person = snapshot.val()
     var photo_url = getEmbeddablePhotoURL(person.photo_url);
     var html = $([
-        '<h1>About me</h1>',
+        '<h1 class="center">About me</h1>',
         '<div class="card member-card center">',
             '<div class="img-container-round center">',
                 '<img src="' + photo_url + '" alt="profile picture">',
