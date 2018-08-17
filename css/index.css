@@ -1,54 +1,26 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    
+#loader-container-small > .lds-roller div:after {
+    width: 4px;
+    height: 4px;
 }
 
-/* Smartphones (landscape) ----------- */
+/* Smartphones ----------- */
 @media only screen 
 and (min-width : 320px) {
-    /* #intro-container {
-        margin-top: 75px;
-        width: 85%;
-    } */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-    
+    #loader-container-small {
+        margin: 50px auto;
+        width: fit-content;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-    
-}
+and (min-width: 768px){
 
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-    /* #intro-container {
-        margin-top: 120px;
-        width: 75%;
-    } */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1024px) {
+and (min-width : 1224px) {
     #intro-container {
         width: 95%;
     }
@@ -56,6 +28,10 @@ and (min-width : 1024px) {
         padding: 10px;
         font-size: 22px;
         margin: 0px;
+    }
+    #loader-container-small {
+        margin: 50% auto;
+        width: fit-content;
     }
     .announcements-container {
         padding: 10px;
@@ -78,16 +54,7 @@ and (min-width : 1024px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-    /* #intro-container {
-        width: 65%;
-    } */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+    
 }
 
 div.announcements-container::-webkit-scrollbar {
