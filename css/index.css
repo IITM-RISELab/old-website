@@ -1,14 +1,56 @@
+#announcements-wrapper {
+    background-color: #E0F2F1;
+    padding: 10px;
+    border: none;
+}
+
 #loader-container-small > .lds-roller div:after {
     width: 4px;
     height: 4px;
 }
 
+
+
 /* Smartphones ----------- */
 @media only screen 
 and (min-width : 320px) {
     #loader-container-small {
-        margin: 50px auto;
+        margin: 20px auto;
         width: fit-content;
+    }
+    #intro-container {
+        width: 85%;
+        margin: auto;
+    }
+    #announcements-heading {
+        padding: 10px;
+        font-size: 20px;
+        margin: 0px;
+    }
+    #announcements-wrapper {
+        width: 95%;
+        margin: 0px auto;
+        padding: 10px;
+    }
+    #announcements-container {
+        width: 100%;
+    }
+    .card.announcement-card {
+        font-size: 16px;
+        margin: 0px 0px 10px 0px;
+        padding: 2px 7px;
+    }
+    .card.announcement-card > h1 {
+        font-size: 18px;
+        margin: 5px 0px;
+        text-align: center;
+        padding: 2px;
+    }
+    .card.announcement-card > h2 {
+        font-size: 14px;
+        color: #525252;
+        margin: 10px 0px;
+        padding: 0px;
     }
 }
 
@@ -33,21 +75,33 @@ and (min-width : 1224px) {
         margin: 50% auto;
         width: fit-content;
     }
-    .announcements-container {
+    #announcements-container {
+        display: none;
         padding: 10px;
         overflow-x: hidden;
         height: 50vh;
         overflow-y: scroll;
     }
-    .announcements-container h2 {
+    #announcements-wrapper > h2 {
         font-size: 24px;
-        padding: 10px;
-        margin: 0px auto;
+        padding: 5px;
+        margin: 5px auto;
     }
     .card.announcement-card {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0px 0px 10px 0px;
-        padding: 5px;
+        padding: 2px 7px;
+    }
+    .card.announcement-card > h1 {
+        font-size: 18px;
+        margin: 5px 0px;
+        text-align: center;
+        padding: 2px;
+    }
+    .card.announcement-card > h2 {
+        font-size: 16px;
+        margin: 10px 0px;
+        padding: 0px;
     }
 }
 
@@ -57,36 +111,36 @@ and (min-width : 1824px) {
     
 }
 
-div.announcements-container::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+div#announcements-container::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
 }
-div.announcements-container::-webkit-scrollbar-button {
+div#announcements-container::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
 }
-div.announcements-container::-webkit-scrollbar-thumb {
-  background: #0cee4e;
-  border: 0px solid #ffffff;
+div#announcements-container::-webkit-scrollbar-thumb {
+  background: #fcfcfc;
+  border: 0px none #ffffff;
   border-radius: 50px;
 }
-div.announcements-container::-webkit-scrollbar-thumb:hover {
-  background: #39b134;
+div#announcements-container::-webkit-scrollbar-thumb:hover {
+  background: #fdfdfd;
 }
-div.announcements-container::-webkit-scrollbar-thumb:active {
-  background: #39d750;
+div#announcements-container::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
 }
-div.announcements-container::-webkit-scrollbar-track {
-  background: #bcc1bc;
-  border: 0px groove #ffffff;
-  border-radius: 100px;
+div#announcements-container::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
 }
-div.announcements-container::-webkit-scrollbar-track:hover {
-  background: #a7a7a7;
+div#announcements-container::-webkit-scrollbar-track:hover {
+  background: #666666;
 }
-div.announcements-container::-webkit-scrollbar-track:active {
-  background: #696969;
+div#announcements-container::-webkit-scrollbar-track:active {
+  background: #525252;
 }
-div.announcements-container::-webkit-scrollbar-corner {
+div#announcements-container::-webkit-scrollbar-corner {
   background: transparent;
 }

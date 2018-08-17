@@ -12,6 +12,10 @@
    padding: 0px;
  }
  
+ a::-moz-focus-inner {
+  border: 0;
+}
+
  a {
    color: #000;
  }
@@ -168,7 +172,7 @@
    padding: 15px;
  }
  
- .card:hover {
+ .card:not(.no-hover):hover {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
    transition: 0.3s all ease-in-out;
  }

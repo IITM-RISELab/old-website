@@ -20,17 +20,16 @@ databaseRef.once("value", function (snapshot) {
         var key = keys[i]
         addAnnouncementToHTML(announcementList[key], key)
     }
-    $('#loader-container').fadeOut().remove()
-    $("#announcements-list").fadeIn();
+    $('#loader-container-small').fadeOut().remove()
+    $("#announcements-container").fadeIn();
 });
 
 function addAnnouncementToHTML(announcement, id) {
     var html = $([
         '<div class="card announcement-card">',
             '<h1>' + announcement.title +  '</h1>',
-            '<h2> By: ' + announcement.author + '</h2>',
-            '<p>' + announcement.info +'</p>',
             '<h2>' + announcement.date + '</h2>',
+            '<p>' + announcement.info +'</p>',
         '</div>'
     ].join("\n"))
     $("#announcements-container").prepend(html)
