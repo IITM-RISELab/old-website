@@ -13,7 +13,7 @@
 
 }
 .bio-card > h2 {
-
+    color: #34495E;
 }
 .bio-card > h3 {
 
@@ -91,16 +91,16 @@
         margin: 30px;
     }
     .bio-card > h1 {
-        font-size: 26px;
+        font-size: 22px;
         margin: 5px auto;
         padding: 0px;
     }
     .bio-card > h2 {
-        font-size: 22px;
+        font-size: 18px;
         margin: 10px auto;
     }
     .bio-card > h3 {
-        font-size: 20px;
+        font-size: 16px;
         margin: 5px auto;
     }
  }

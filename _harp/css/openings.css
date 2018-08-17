@@ -1,13 +1,6 @@
-.opening-card > h1 {
-
-}
-
-.opening-card > h2 {
-
-}
-
-.opening-card > h3 {
-
+.opening-card {
+    width: 90%;
+    margin: 0px 5%;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -50,7 +43,7 @@ and (orientation : landscape) {
 /* iPads (portrait) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (max-device-width : 1224px) 
 and (orientation : portrait) {
     /* #intro-container {
         margin-top: 120px;
@@ -61,14 +54,21 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1024px) {
-    .opening-card > h1 {
-        font-size: 28px;
+    .card.opening-card {
+        padding: 5px 20px;
     }
-    .opening-card > h2 {
-    
+    .opening-card h1 {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px 0px;
+        margin: 15px auto;
     }
-    .opening-card > h3 {
-    
+    .opening-card h2 {
+        font-size: 22px;
+        margin: 10px 0px;
+    }
+    .opening-card h3 {
+        font-size: 20px;
     }
 }
 
