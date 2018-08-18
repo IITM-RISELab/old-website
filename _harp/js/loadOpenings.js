@@ -35,22 +35,16 @@ databaseRef.once("value", function (snapshot) {
 });
 
 function addOpeningToHTML(opening, id) {
-    skillSetList = '';
-    for(var skill_id in opening.skills ){
-        skillSetList += '<li>' + opening.skills[skill_id] + '</li>\n';
-    }
     var html = $([
         '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">',
         '<div class="card opening-card">',
-            '<h1 class="center">' + opening.title + '</h1>',
+            '<h1 class="center">' + opening.position + '</h1>',
             '<h2>Summary</h2>',
-            '<p class="center">' + opening.summary + '</p>',
-            '<div class="skill-container">',
-                '<h2>Skills required</h2>',
-                '<ul>',
-                    skillSetList,
-                '</ul>',
-            '</div>',
+            '<p>' + opening.summary + '</p>',
+            '<h2>Skills required</h2>',
+            '<p>' + opening.skills + '</p>',
+            '<h2> Experience </h2>',
+            '<p>' + opening.experience + '</p>',
             '<a class="btn btn-primary center" href="contact.html?" role="button">Apply</a>',        '</div>',
         '</div>'
     ].join("\n"));

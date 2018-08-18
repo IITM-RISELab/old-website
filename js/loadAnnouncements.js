@@ -29,7 +29,7 @@ function addAnnouncementToHTML(announcement, id) {
         '<div class="card announcement-card">',
             '<h1>' + announcement.title +  '</h1>',
             '<h2>' + announcement.date + '</h2>',
-            '<p>' + announcement.info +'</p>',
+            '<p>' + announcement.content +'</p>',
         '</div>'
     ].join("\n"))
     $("#announcements-container").prepend(html)
