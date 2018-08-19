@@ -24,11 +24,14 @@ var databaseRef = database.ref('/openings');
 // Database Listener
 databaseRef.once("value", function (snapshot) {
     var openingsList = snapshot.val();
-    var keys = Object.keys(openingsList);
-    for (var i = 0; i < keys.length; i++) {
-        var _id = keys[i];
-        console.log(openingsList[_id]);
-        addOpeningToHTML(openingsList[_id], _id);
+    if(openingsList != null){
+        var keys = Object.keys(openingsList);
+        for (var i = 0; i < keys.length; i++) {
+            var _id = keys[i];
+            addOpeningToHTML(openingsList[_id], _id);
+        }        
+    }else{
+        $('#openings-container').html('<h2 style="text-align:center" class="center"><strong>No current openings</strong></h2>');
     }
     $('#loader-container').fadeOut().remove();
     $("#openings-container").fadeIn();

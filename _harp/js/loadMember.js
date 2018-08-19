@@ -17,6 +17,7 @@ var databaseRef = database.ref('/members')
 databaseRef.child(id).once('value').then(function(snapshot){
     var person = snapshot.val()
     var photo_url = getEmbeddablePhotoURL(person.photo_url);
+    var lab_url = getLabURL(person.lab_name);
     var html = $([
         '<h1 class="center">About me</h1>',
         '<div class="card member-card center">',
@@ -26,7 +27,9 @@ databaseRef.child(id).once('value').then(function(snapshot){
             '<h2 class="center">' + person.name + '</h2>',
             '<h3 class="center">' + person.area_of_research + '</h3>',
             '<h4 class="center" style="color:blue"> Guide: ' + person.guide + '</h4>',
-            '<h5 class="center" style="color:#E74C3C"> Lab: ' + person.lab_name + '</h5>',
+            '<h4 class="center">',
+                '<a href="' + lab_url + '">Lab: ' + person.lab_name + '</a>',
+            '</h4>',
             '<p class="center" >' + person.bio + '</p>',
             '<a class="btn btn-info center" href="' + person.bio_url + '" role="button">Portfolio</a>',
         '</div>'
@@ -44,4 +47,14 @@ function getEmbeddablePhotoURL(url){
     else
         embeddableLink = "https://raw.githubusercontent.com/AkshayRaman97/iitm-riselab-dev.github.io/master/_harp/assets/dummy-profile.jpeg"
     return(embeddableLink);
+}
+
+function getLabURL(labName){
+    labURLDict = {
+        "CASL": "CASL.html",
+        "SSG": "SSG.html",
+        "Shakti": "Shakti.html",
+        "IIL": "IIL.html"
+    }
+    return((labURLDict[labName] != undefined)? labURLDict[labName] : "#");
 }

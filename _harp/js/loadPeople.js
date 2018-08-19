@@ -24,12 +24,14 @@ var databaseRef = database.ref('/members');
 // Database Listener
 databaseRef.once("value", function (snapshot) {
     var memberList = snapshot.val();
-    console.log(memberList);
-    var keys = Object.keys(memberList);
-    for (var i = 0; i < keys.length; i++) {
-        var _id = keys[i];
-        console.log(memberList[_id]);
-        addPersonToHTML(memberList[_id], _id);
+    if(memberList != null){
+        var keys = Object.keys(memberList);
+        for (var i = 0; i < keys.length; i++) {
+            var _id = keys[i];
+            addPersonToHTML(memberList[_id], _id);
+        }
+    }else{
+        $('#people-container').html('<h2 style="text-align:center" class="center"><strong>Nothing to show</strong></h2>');
     }
     $('#loader-container').fadeOut().remove();
     $("#people-container").fadeIn();

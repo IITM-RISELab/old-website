@@ -8,6 +8,12 @@
     margin: 20px auto;
 }
 
+.card.member-card h4 > a {
+    text-decoration: underline;
+    color: #28B463;
+    text-underline-position: under;
+}
+
 .card.member-card p {
     padding: 10px 10px;
     font-family: 'Nunito Sans', sans-serif;
