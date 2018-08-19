@@ -17,6 +17,10 @@
   
   
   
+  
+    <link href="css/labs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/people.css">
+  
   <link href="css/master.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
@@ -57,7 +61,7 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
             <a class="dropdown-item " href="IIL.html">1 IIL</a>
             <a class="dropdown-item " href="CASL.html">2 CASL</a>
-            <a class="dropdown-item active" href="Shakthi.html">3 Shakti</a>
+            <a class="dropdown-item active" href="Shakti.html">3 Shakti</a>
             <a class="dropdown-item " href="SSG.html">4 SSG</a>
           </div>
         </li>
@@ -70,7 +74,7 @@
 
   <!-- Page Content gets inserted here -->
   <div class="container">
-    <h1 class="center">Shakthi</h1>
+    <h1 class="center">Shakti</h1>
     <h2 class="center"> About us</h2>
     <p>
         The SHAKTI processor project aims to build 6 variants of processors based on the RISC-V ISA from UC Berkeley (www.riscv.org). The project will develop a complete reference SoC for each family which will serve as an exemplar for that category of processor. While the cores and most of the SoC components (including bus and interconnect fabrics) will be in open source, some standard components like PCIe controller, DDR controller and PHY IP will be proprietary 3rd part IP.
@@ -84,7 +88,59 @@
         While we do plan to tape out a few variants, given the foundry NDA requirements, we will not be able to publish any layout/backend data.
 
     </p>
+    <div id="loader-container-lab" class="center">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div id="people-container">
+        <h1 style="text-align: center" class="center">Lab members</h1>
+        <div id="member-container" class="center">
+          <div id="phd-students">
+            <h2 class="center">Ongoing Phd Students</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+          <div id="ms-students">
+            <h2 class="center">MS students</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+          <div id="btech-students">
+            <h2 class="center">B.Tech Students</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+          <div id="dual-students">
+            <h2 class="center">Dual Students</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+          <div id="mtech-students">
+            <h2 class="center">M.Tech Students</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+          <div id="project-associates">
+            <h2 class="center">Project Associates</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+          <div id="other-members">
+            <h2 class="center">Other Members</h2>
+            <div class="row">
+    
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="js/loadLabMembers.js"></script>
 
 </body>
 
