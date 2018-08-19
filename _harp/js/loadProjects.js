@@ -14,12 +14,14 @@ var databaseRef = database.ref('/projects')
 // Database Listener
 databaseRef.once("value", function (snapshot) {
     var projectList = snapshot.val();
-    console.log(projectList)
-    var keys = Object.keys(projectList)
-    for (var i = 0; i < keys.length; i++) {
-        console.log(keys[i])
-        var key = keys[i]
-        addProjectToHTML(projectList[key], key)
+    if (projectList != null) {
+        var keys = Object.keys(projectList)
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i]
+            addProjectToHTML(projectList[key], key)
+        }
+    } else {
+        $('#projects-container').html('<h2 style="text-align:center" class="center"><strong>Nothing to show</strong></h2>');
     }
     $('#loader-container').fadeOut().remove()
     $("#projects-container").fadeIn();

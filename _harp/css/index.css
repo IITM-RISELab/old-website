@@ -4,20 +4,9 @@
     border: none;
 }
 
-#loader-container-small > .lds-roller div:after {
-    width: 4px;
-    height: 4px;
-}
-
-
-
 /* Smartphones ----------- */
 @media only screen 
 and (min-width : 320px) {
-    #loader-container-small {
-        margin: 20px auto;
-        width: fit-content;
-    }
     #intro-container {
         width: 85%;
         margin: auto;
@@ -70,10 +59,6 @@ and (min-width : 1224px) {
         padding: 10px;
         font-size: 22px;
         margin: 0px;
-    }
-    #loader-container-small {
-        margin: 50% auto;
-        width: fit-content;
     }
     #announcements-container {
         display: none;

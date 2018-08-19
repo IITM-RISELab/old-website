@@ -31,6 +31,10 @@
   <% if (current.source == 'openings') { %>
     <link href="css/openings.css" rel="stylesheet">
   <% } %>
+  <% if (current.source == 'IIL' || current.source == 'CASL' || current.source == 'Shakti' || current.source == 'SSG' ){ %>
+    <link href="css/labs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/people.css">
+  <% } %>
   <link href="css/master.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
@@ -71,7 +75,7 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
             <a class="dropdown-item <%- current.source == 'IIL' ? 'active' : '' %>" href="IIL.html">1 IIL</a>
             <a class="dropdown-item <%- current.source == 'CASL' ? 'active' : '' %>" href="CASL.html">2 CASL</a>
-            <a class="dropdown-item <%- current.source == 'Shakthi' ? 'active' : '' %>" href="Shakthi.html">3 Shakti</a>
+            <a class="dropdown-item <%- current.source == 'Shakti' ? 'active' : '' %>" href="Shakti.html">3 Shakti</a>
             <a class="dropdown-item <%- current.source == 'SSG' ? 'active' : '' %>" href="SSG.html">4 SSG</a>
           </div>
         </li>
