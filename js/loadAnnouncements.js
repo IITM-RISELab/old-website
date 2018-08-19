@@ -14,11 +14,16 @@ var databaseRef = database.ref('/announcements')
 // Database Listener
 databaseRef.once("value", function (snapshot) {
     var announcementList = snapshot.val();
-    var keys = Object.keys(announcementList)
-    for (var i = 0; i < keys.length; i++) {
-        console.log(keys[i])
-        var key = keys[i]
-        addAnnouncementToHTML(announcementList[key], key)
+    if(announcementList != null){
+        var keys = Object.keys(announcementList)
+        for (var i = 0; i < keys.length; i++) {
+            console.log(keys[i])
+            var key = keys[i]
+            addAnnouncementToHTML(announcementList[key], key)
+        }
+    }else{
+        $("#announcements-container")
+        .html('<h2 style="text-align:center" class="center">No recents announcements</h2>');
     }
     $('#loader-container-small').fadeOut().remove()
     $("#announcements-container").fadeIn();

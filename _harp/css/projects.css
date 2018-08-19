@@ -11,83 +11,65 @@
     height: auto;
 }
 
-.card-body > h1,h2 {
-    text-align: center;
-}
-
-.card-body > h2,p {
+.card-body > h1,h2{
     text-align: center;
 }
 
   /* Smartphones (portrait and landscape) ----------- */
  @media only screen 
- and (min-device-width : 320px) 
- and (max-device-width : 480px) {
+ and (min-width : 320px) {
     #projects-list > div {
-        width: 85%;
+        width: 90%;
     }
     .card-body {
         padding: 5px 10px 10px 10px;
     }
- }
- 
- /* Smartphones (landscape) ----------- */
- @media only screen 
- and (min-width : 321px) {
-    
- }
- 
- /* Smartphones (portrait) ----------- */
- @media only screen 
- and (max-width : 320px) {
- /* Styles */
+    .card-body > h1 {
+        font-size: 22px;
+    }
+    .card-body > h2 {
+        font-size: 18px;
+    }
+    .card-container > .card {
+        margin: 20px auto;
+    }
  }
  
  /* iPads , PCs ----------- */
  @media only screen 
- and (min-device-width : 768px) {
-    .card {
-        margin: 40px;
-    }
+ and (min-width : 768px) {
     .card-body > h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .card-body > h2 {
         font-size: 20px;
     }
- }
- 
- /* iPads (landscape) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : landscape) {
- /* Styles */
- }
- 
- /* iPads (portrait) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : portrait) {
- /* Styles */
+    .card-container > .card {
+        margin: 30px auto;
+    }
  }
  
  /* Desktops and laptops ----------- */
  @media only screen 
- and (min-width : 1024px) {
- /* Styles */
+ and (min-width : 1224px) {
+    .card-body > h1 {
+        font-size: 24px;
+    }
+    .card-body > h2 {
+        font-size: 20px;
+    }
+    .card-container > .card {
+        margin: 40px auto;
+    }
  }
  
  /* Large screens ----------- */
  @media only screen 
  and (min-width : 1824px) {
- /* Styles */
- }
- 
- /* iPhone 4 ----------- */
- @media
- only screen and (-webkit-min-device-pixel-ratio : 1.5),
- only screen and (min-device-pixel-ratio : 1.5) {
- /* Styles */
+    .card-body > h1 {
+        font-size: 26px;
+    }
+    .card-body > h2 {
+        font-size: 22px;
+    }
  }
