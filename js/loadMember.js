@@ -9,12 +9,12 @@ var config = {
     projectId: "rise-labs-website",
     storageBucket: "rise-labs-website.appspot.com",
     messagingSenderId: "368224713702"
-    }
+}
 firebase.initializeApp(config)
 var database = firebase.database()
 var databaseRef = database.ref('/members')
 
-databaseRef.child(id).once('value').then(function(snapshot){
+databaseRef.child(id).once('value').then(function(snapshot){ 
     var person = snapshot.val()
     var photo_url = getEmbeddablePhotoURL(person.photo_url);
     var lab_url = getLabURL(person.lab_name);
