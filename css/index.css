@@ -64,7 +64,7 @@ and (min-width: 768px){
 @media only screen 
 and (min-width : 1224px) {
     #intro-container {
-        width: 95%;
+        width: 100%;
     }
     #announcements-heading {
         padding: 10px;
@@ -108,7 +108,23 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-    
+    #announcements-heading {
+        font-size: 24px;
+    }
+    #announcements-wrapper > h2 {
+        font-size: 26px;
+        padding: 7px;
+        margin: 7px auto;
+    }
+    .card.announcement-card {
+        font-size: 18px;
+    }
+    .card.announcement-card > h1 {
+        font-size: 20px;
+    }
+    .card.announcement-card > h2 {
+        font-size: 18px;
+    }
 }
 
 div#announcements-container::-webkit-scrollbar {

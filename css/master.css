@@ -344,16 +344,44 @@
  /* Large screens ----------- */
  @media only screen 
  and (min-width : 1824px) {
- /* Styles */
+  body {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 36px;
+    padding: 40px 0px 20px 0px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin: 20px 0px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font-size: 20px;
+  }
+  #navigation-bar>.navbar-brand {
+    font-size: 36px;
+  }
+  #navigation-bar a {
+    font-size: 22px;
+  }
+  .btn.btn-primary, .btn.btn-info {
+    font-size: 18px;
+  }
  }
- 
- /* iPhone 4 ----------- */
- @media
- only screen and (-webkit-min-device-pixel-ratio : 1.5),
- only screen and (min-device-pixel-ratio : 1.5) {
- /* Styles */
- }
- 
 
  /* Loader symbol */
  
