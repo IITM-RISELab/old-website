@@ -23,7 +23,7 @@ databaseRef.once("value", function (snapshot) {
         }
     }else{
         $("#announcements-container")
-        .html('<h2 style="text-align:center" class="center"><strong>No recents announcements</strong></h2>');
+        .html('<h2 style="text-align:center" class="center"><strong>No recent announcements</strong></h2>');
     }
     $('#loader-container-small').fadeOut().remove()
     $("#announcements-container").fadeIn();

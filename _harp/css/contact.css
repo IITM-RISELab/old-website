@@ -16,6 +16,10 @@
     border-color: #2ECC71;
 }
 
+.warning {
+    color: #F44336;
+}
+
 input.form-input {
     padding: 3px;
     border-width: 0px 0px 2px 0px;
