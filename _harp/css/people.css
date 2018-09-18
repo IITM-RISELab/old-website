@@ -3,7 +3,7 @@
 }
 
 .card.bio-card {
-    height: 90%;
+    height: auto;
     width: 90%;
     margin: 5% auto;
     padding: 20px;
