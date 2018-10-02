@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Karla|Montserrat|Archivo|Nunito+Sans');
 body {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   font-family: 'Nunito Sans', sans-serif;
   padding: 0px;
 }
@@ -30,8 +30,11 @@ a:hover {
 #navigation-bar a:hover,
 #navigation-bar a:visited,
 #navigation-bar a:active {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
+}
+.dropdown-menu {
+  background-color: #1d2124;
 }
 
 img {
@@ -83,7 +86,7 @@ body {
 .btn.btn-primary,
 .btn.btn-info {
   font-family: 'Lato', sans-serif;
-  background-color: #2ECC71;
+  background-color: #2eccbd;
   color: #ffffff;
   border: none;
   border-radius: 40px;
@@ -101,21 +104,21 @@ body {
 .btn.btn-primary:focus,
 .btn.btn-info:focus {
   outline: none;
-  background-color: #1f836d;
-  box-shadow: 0 0 0 0.2rem #2ecc7170;
+  background-color: #30b6a8;
+  box-shadow: none;
 }
 
 .btn.btn-primary:active,
 .btn.btn-info:active {
   outline: none;
-  background-color: #1f836d !important;
+  background-color: #2eccbd !important;
 }
 
 .btn.btn-primary:focus:active,
 .btn.btn-info:focus:active {
   outline: none;
-  box-shadow: 0 0 0 0.2rem #2ecc7170 !important;
-  background-color: #1f836d !important;
+  box-shadow: none;
+  background-color: #2eccbd !important;
 }
 
 #loader-container-small>.lds-roller div:after {
@@ -128,7 +131,7 @@ body {
 #navigation-bar {
   padding: 0px;
   height: auto;
-  background-color: #FDFEFE;
+  background-color: #212529;
   -webkit-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
   -moz-box-shadow: 0px 4px 18px -1px rgba(135, 128, 135, 1);
   box-shadow: 0px 4px 8px -1px rgba(135, 128, 135, 0.2)
@@ -156,8 +159,12 @@ body {
 
 #navigation-bar .active>a {
   pointer-events: none;
-  color: #2ECC71;
+  color: #2eccbd;
   font-weight: 550;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiluJmu1efdAhWHq48KHQENB4oQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fflower%2F&psig=AOvVaw2WV5E2mqi11YZFcRLkXnuQ&ust=1538566596168781");
 }
 
 @media only screen and (min-width: 992px) {
@@ -168,15 +175,18 @@ body {
 }
 
 .dropdown-item.active {
-  background-color: #2ECC71;
+  background-color: #2eccbd;
 }
 
 .dropdown-item.active:active {
-  background-color: #2ECC71;
+  background-color: #2eccbd;
 }
 
 .dropdown-item:active {
-  background-color: #2ECC71;
+  background-color: #2eccbd;
+}
+.dropdown-item:hover {
+  background-color: #2eccbd;
 }
 
 /* Utility classes */
